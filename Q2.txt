@@ -1,0 +1,19 @@
+%%js
+function getReverseArray(arr){
+  let result=[];
+  let iStart = 0;
+  let iEnd = arr.length-1;
+  while (iStart < iEnd)
+  {
+    let tmp = arr[iStart];
+    arr[iStart]=arr[iEnd];
+    arr[iEnd]=tmp;
+    iStart++;
+    iEnd--;
+  }
+  console.log(arr);
+}
+
+let Arr1 = [4,3,2,1];
+
+getReverseArray(Arr1);

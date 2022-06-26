@@ -1,0 +1,31 @@
+%%js
+function checkRotatestring(s1,s2){  
+  if(s1.length != s2.length){
+    return false;
+  }
+  
+  let tmp = s1 + s1;
+  console.log(tmp.search(s2));
+  
+  if (tmp.search(s2) != -1)
+  {
+    return true;
+  }
+  else
+    {
+      return false;
+    }
+  
+}
+
+let a1 = "HELLO"
+let a2 = "LOHEL"
+
+if (checkRotatestring(a1, a2))
+{
+  console.log("Selected strings are rotation each other")
+}
+else
+{
+ console.log("Selected strings are not rotation each other")
+}   
